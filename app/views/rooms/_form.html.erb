@@ -1,0 +1,54 @@
+<%= form_for(room) do |f| %>
+  <% if room.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(room.errors.count, "error") %> prohibited this room from being saved:</h2>
+
+      <ul>
+      <% room.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= f.text_field :name, class: "form-control", placeholder: "name" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.text_area :description, class: "form-control", placeholder:"description" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.number_field :accommodates, class: "form-control", placeholder: "accommodates", min: "0" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.number_field :bathrooms, class: "form-control", placeholder: "bathrooms", min: "0" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.text_field :price, class: "form-control", placeholder: "price", min: "0" %>
+  </div>
+
+  <div class="form-check">
+    <%= f.label :kitchen %>
+    <%= f.check_box :kitchen, class: "form-check-input", min: "0" %>
+  </div>
+
+  <div class="form-check">
+    <%= f.label :internet %>
+    <%= f.check_box :internet,class: "form-check-input", min: "0" %>
+  </div>
+
+  <div class="form-check">
+    <%= f.label :pets %>
+    <%= f.check_box :pets, class: "form-check-input", min: "0" %>
+  </div>
+
+
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
