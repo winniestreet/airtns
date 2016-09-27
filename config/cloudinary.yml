@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: drsdcrdz4
+  api_key: '154551575556289'
+  api_secret: O6yrtwGzw0Q0GR11LYfn1CgvNko
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: drsdcrdz4
+  api_key: '154551575556289'
+  api_secret: O6yrtwGzw0Q0GR11LYfn1CgvNko
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: drsdcrdz4
+  api_key: '154551575556289'
+  api_secret: O6yrtwGzw0Q0GR11LYfn1CgvNko
+  enhance_image_tag: true
+  static_image_support: false

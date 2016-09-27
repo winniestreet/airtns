@@ -17,6 +17,10 @@ gem 'coffee-rails', '~> 4.2'
 # gem 'therubyracer', platforms: :ruby
 gem 'devise'
 
+gem 'carrierwave'
+
+gem 'cloudinary'
+
 gem 'growlyflash'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

@@ -46,6 +46,10 @@
     <%= f.check_box :pets, class: "form-check-input", min: "0" %>
   </div>
 
+  <div class="form-inputs">
+    <%= f.label :image %>
+    <%= f.file_field :image, as: :file %>
+  </div>
 
 
   <div class="actions">

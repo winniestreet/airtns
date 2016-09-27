@@ -1,6 +1,11 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <strong>Images:</strong>
+  <%= @room.image %>
+</p>
+
+<p>
   <strong>Description:</strong>
   <%= @room.description %>
 </p>
@@ -44,6 +49,7 @@
   <strong>Name:</strong>
   <%= @room.name %>
 </p>
+
 
 <%= link_to 'Edit', edit_room_path(@room) %> |
 <%= link_to 'Back', rooms_path %>
