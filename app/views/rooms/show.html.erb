@@ -1,5 +1,7 @@
 <p id="notice"><%= notice %></p>
 
+<%= render 'bookings/form', booking: @booking, room: @room %>
+
 <p>
   <strong>Description:</strong>
   <%= @room.description %>
